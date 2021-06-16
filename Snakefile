@@ -17,12 +17,12 @@ r1="samples/{sample}.fastq.gz"
 #Defining the input files for the final rule, which should be the final files we want to generate
 rule all:
         input:
-#                "hisat2/hisat2_counts.txt",
+                "hisat2/hisat2_counts.txt",
                 "Results/Fastqc_Reports/multiqc_report.html",
                 "Results/Trim_galore/multiqc_report.html",
-#		"hisat2/multiqc_report.html",
+		"hisat2/multiqc_report.html",
 #                expand("Kallisto/{sample}/abundance.tsv",  sample=SAMPLES)
-                expand("hisat2/{sample}.bam", sample=SAMPLES)
+#                expand("hisat2/{sample}.bam", sample=SAMPLES)
 
 #Quality Check
 rule fastqc_check1:
@@ -104,4 +104,27 @@ rule hisat2_Alignment:
                 """
 
 
-#
+#Extracting counts from the alignment files using featureCounts
+rule featurecounts:
+        input:
+                files=expand("hisat2/{sample}.bam", sample=SAMPLES),
+                annot=ref_annot
+        output:
+                "hisat2/hisat2_counts.txt"
+        params:
+                threads=40
+        shell:
+                "featureCounts -T {params.threads} -a {input.annot} -o {output} {input.files}"
+
+#Multiqc on the featurecounts directory
+rule multiqc3:
+	input:
+		"hisat2/hisat2_counts.txt"
+	params:
+                dir="hisat2"
+	output:
+		"hisat2/multiqc_report.html"
+
+	shell:
+		"multiqc {params.dir}  -o {params.dir} "
+
