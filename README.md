@@ -9,3 +9,7 @@ Types of Cancers looked at include:
 - CRC
 - GBM
 - HC
+
+aa|bb|cc
+--|--|--
+ee|ff|gg
