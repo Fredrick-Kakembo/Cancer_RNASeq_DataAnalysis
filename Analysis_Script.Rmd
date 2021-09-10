@@ -1,0 +1,196 @@
+---
+title: "MSBT2 Cancer RNASeq Data Analysis"
+author: "Kakembo Fredrick Elishama"
+date: "9/10/2021"
+output: pdf_document
+---
+
+# Loading the Packages
+```{r loading packages, message=FALSE}
+library(tidyverse)
+library(DESeq2)
+library(edgeR)
+library(reshape2)
+library(dendextend)
+```
+
+
+# Loading data
+
+```{r import meta data, message=FALSE}
+#setwd("~/Desktop/Academics/HackBio Fellowship/Transcriptomics/NeuroGenomics-HackBio/02-PracticalDiffExp/scripts/")
+setwd("~/Desktop/Kakembo/Cancer_RNASeq_DataAnalysis/")
+
+list.files() #List files in the directory
+
+#Reading the metadata file
+meta <- read.csv("metadata.file1", sep="\t", row.names = 1, header = T, stringsAsFactors = T)
+#meta <- read.csv("metadata.file", sep="\t")
+
+levels(meta$cancer_type)
+
+table(meta$Run)
+head(meta)
+
+table(colnames(counts))
+```
+
+
+Next we want to read in the data. Each sample's counts are stored in a separate file. files into a count matrix
+
+```{r import counts}
+counts <- read.csv("hisat2/hisat2_counts.txt", sep="\t", header=T, row.names=1, comment.char = "#")
+#head(counts)
+
+#Check the column names
+colnames(counts)
+
+#Remove the unwanted columns
+counts[c("Chr", "Start", "End", "Strand", "Length")] <- NULL
+
+colnames(counts) <- gsub(".bam", "", colnames(counts))
+colnames(counts) <- gsub("hisat2.", "", colnames(counts))
+
+head(counts)
+
+#Check if samples in the countdata matrix have a corresponding entry in the metadata file
+all(rownames(meta) %in% colnames(counts))
+
+#Check if the order of the samples in the matrix is similar to that in the metadata file.
+all(colnames(counts) == rownames(meta))
+
+#Since the order of the the counts file is not the same as that of the metadata file, 
+# I rearrange the count data file to match the arrangement of the metadata file.
+counts <- counts[, rownames(meta)]
+
+#Check again
+all(colnames(counts) == rownames(meta))
+
+
+```
+
+
+
+# Part 1: Breast Cancer vs Health Controls
+
+
+```{r}
+#Subset the medata to just breast cancer and Health controls
+meta1 <- subset(meta,cancer_type=="Breast" | cancer_type=="HC" )
+
+#Subset the corresponing counts for the BC and HC
+counts1 <- counts[, rownames(meta1)]
+
+#Create the DESeq object
+dds1<-DESeqDataSetFromMatrix(countData = counts1,
+                            colData = meta1,
+                            design = ~ cancer_type ) 
+
+dds1<-DESeq(dds1)
+```
+
+```{r}
+#Sample Dendogram
+vsd <- vst(dds1, blind =FALSE)
+mat <-assay(vsd)
+head(as.data.frame(mat))
+
+
+dend = t(mat) %>% 
+  scale %>% 
+  dist %>% 
+  hclust %>% 
+  as.dendrogram 
+
+dend %>% 
+  set("labels", meta1$cancer_type) %>% 
+  plot
+```
+
+
+```{r}
+mat.pca<-prcomp(t(mat)) #perform PCA
+summary(mat.pca)
+
+#Extract PCA scrores
+scores <-as.data.frame(mat.pca$x) 
+scores
+
+
+scores %>% 
+  mutate(GEO_Accession = rownames(scores)) %>% 
+  left_join(meta1) %>% 
+  ggplot(aes(PC1, PC2, color = cancer_type))+
+  geom_point()
+
+```
+## R Markdown
+
+
+
+```{r}
+res <- results(dds1)
+summary(res)
+
+
+vsd <- vst(dds1, blind=FALSE)  #computing for Variance Stabilizing Transformation
+rld <- rlog(dds1, blind=FALSE) #Computing for regularised logarithm
+
+#BiocManager::install("vsn")
+BiocManager::install("pheatmap")
+BiocManager::install("calibrate")
+library(vsn)
+library(pheatmap)
+library("RColorBrewer")
+require(genefilter)
+require(calibrate)
+#Dispersion Plots
+#for the untransformed dds
+ntd <- normTransform(dds1)
+meanSdPlot(assay(ntd))
+#for vst
+meanSdPlot(assay(vsd))
+#For rlog
+meanSdPlot(assay(rld))
+
+
+select <- order(rowMeans(counts(dds1,normalized=TRUE)), decreasing=TRUE)[1:20]
+df <- as.data.frame(colData(dds1))
+pheatmap(assay(vsd)[select,], cluster_rows=FALSE, show_rownames=FALSE,cluster_cols=FALSE, annotation_col=df)
+
+
+#Calculate sample-2-sample distances
+sampleDists <- dist(t(assay(vsd)))
+
+
+sampleDistMatrix <- as.matrix(sampleDists) #Converting the dist object to matrix
+rownames(sampleDistMatrix) <- vsd$Condition
+colnames(sampleDistMatrix) <- rownames(meta1) 
+#Defining the colors
+colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
+pheatmap(sampleDistMatrix,
+clustering_distance_rows=sampleDists,
+clustering_distance_cols=sampleDists,
+col=colors)
+```
+
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
