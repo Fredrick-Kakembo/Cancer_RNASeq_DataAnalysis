@@ -1,0 +1,416 @@
+[2021-06-21 10:01:49,457] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/course23/.conda/envs/cancer/lib/python3.6/site-packages/multiqc_config.yaml
+[2021-06-21 10:01:49,457] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/course23/.multiqc_config.yaml
+[2021-06-21 10:01:49,457] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2021-06-21 10:01:49,457] multiqc                                            [DEBUG  ]  Command used: /home/course23/.conda/envs/cancer/bin/multiqc Results/Trim_galore -o Results/Trim_galore
+[2021-06-21 10:01:49,552] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.10.1
+[2021-06-21 10:01:49,552] multiqc                                            [INFO   ]  This is MultiQC v1.10.1
+[2021-06-21 10:01:49,552] multiqc                                            [DEBUG  ]  Command     : /home/course23/.conda/envs/cancer/bin/multiqc Results/Trim_galore -o Results/Trim_galore
+[2021-06-21 10:01:49,552] multiqc                                            [DEBUG  ]  Working dir : /home/course23/Cancer_msbt
+[2021-06-21 10:01:49,552] multiqc                                            [INFO   ]  Template    : default
+[2021-06-21 10:01:49,552] multiqc                                            [DEBUG  ]  Running Python 3.6.13 |Anaconda, Inc.| (default, Jun  4 2021, 14:25:59)  [GCC 7.5.0]
+[2021-06-21 10:01:49,552] multiqc                                            [INFO   ]  Searching   : /home/course23/Cancer_msbt/Results/Trim_galore
+[2021-06-21 10:01:49,553] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ngsderive, purple, conpair, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dedup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, sentieon, prokka, qc3C, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, snpsplit, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, pychopper, pycoqc, minionqc, multivcfanalyzer, clusterflow, bcl2fastq, interop, ivar, flash, seqyclean, optitype
+[2021-06-21 10:01:49,553] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpe31ntlvt
+[2021-06-21 10:01:49,667] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982800_trimmed_fastqc.html
+[2021-06-21 10:01:49,671] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982800_trimmed_fastqc.html
+[2021-06-21 10:01:49,723] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982659_trimmed_fastqc.html
+[2021-06-21 10:01:49,725] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982659_trimmed_fastqc.html
+[2021-06-21 10:01:49,768] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2095014_trimmed.fq.gz
+[2021-06-21 10:01:49,772] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982802_trimmed_fastqc.html
+[2021-06-21 10:01:49,774] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982802_trimmed_fastqc.html
+[2021-06-21 10:01:49,816] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982661_trimmed_fastqc.html
+[2021-06-21 10:01:49,818] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982661_trimmed_fastqc.html
+[2021-06-21 10:01:49,856] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096482_trimmed_fastqc.html
+[2021-06-21 10:01:49,858] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096482_trimmed_fastqc.html
+[2021-06-21 10:01:49,900] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096504_trimmed_fastqc.html
+[2021-06-21 10:01:49,901] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096504_trimmed_fastqc.html
+[2021-06-21 10:01:49,941] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096497_trimmed_fastqc.html
+[2021-06-21 10:01:49,943] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096497_trimmed_fastqc.html
+[2021-06-21 10:01:49,983] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982697_trimmed_fastqc.html
+[2021-06-21 10:01:49,985] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982697_trimmed_fastqc.html
+[2021-06-21 10:01:50,022] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096488_trimmed_fastqc.html
+[2021-06-21 10:01:50,024] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096488_trimmed_fastqc.html
+[2021-06-21 10:01:50,071] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096501.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,075] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096502_trimmed.fq.gz
+[2021-06-21 10:01:50,079] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982664.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,083] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096500_trimmed.fq.gz
+[2021-06-21 10:01:50,088] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982696_trimmed_fastqc.html
+[2021-06-21 10:01:50,089] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982696_trimmed_fastqc.html
+[2021-06-21 10:01:50,127] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2095031.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,135] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982623.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,136] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982623.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,140] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982611_trimmed.fq.gz
+[2021-06-21 10:01:50,144] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982611.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,152] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982610.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,156] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096481_trimmed.fq.gz
+[2021-06-21 10:01:50,159] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982656.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,160] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982656.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,164] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982802_trimmed.fq.gz
+[2021-06-21 10:01:50,169] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096503_trimmed_fastqc.html
+[2021-06-21 10:01:50,171] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096503_trimmed_fastqc.html
+[2021-06-21 10:01:50,211] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982799_trimmed_fastqc.html
+[2021-06-21 10:01:50,213] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982799_trimmed_fastqc.html
+[2021-06-21 10:01:50,246] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982797_trimmed.fq.gz
+[2021-06-21 10:01:50,251] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982803_trimmed_fastqc.html
+[2021-06-21 10:01:50,252] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982803_trimmed_fastqc.html
+[2021-06-21 10:01:50,290] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982619_trimmed_fastqc.html
+[2021-06-21 10:01:50,291] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982619_trimmed_fastqc.html
+[2021-06-21 10:01:50,329] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096510.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,333] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096505_trimmed.fq.gz
+[2021-06-21 10:01:50,333] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982800_trimmed.fq.gz
+[2021-06-21 10:01:50,339] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096496_trimmed_fastqc.html
+[2021-06-21 10:01:50,340] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096496_trimmed_fastqc.html
+[2021-06-21 10:01:50,375] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982609_trimmed.fq.gz
+[2021-06-21 10:01:50,380] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096501_trimmed_fastqc.html
+[2021-06-21 10:01:50,381] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096501_trimmed_fastqc.html
+[2021-06-21 10:01:50,420] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096510_trimmed_fastqc.html
+[2021-06-21 10:01:50,422] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096510_trimmed_fastqc.html
+[2021-06-21 10:01:50,461] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096483.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,466] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096484_trimmed.fq.gz
+[2021-06-21 10:01:50,470] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982623_trimmed_fastqc.html
+[2021-06-21 10:01:50,472] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982623_trimmed_fastqc.html
+[2021-06-21 10:01:50,505] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096486_trimmed.fq.gz
+[2021-06-21 10:01:50,510] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2095014_trimmed_fastqc.html
+[2021-06-21 10:01:50,511] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2095014_trimmed_fastqc.html
+[2021-06-21 10:01:50,566] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982663.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,574] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982803.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,582] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982608.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,590] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096502_trimmed_fastqc.html
+[2021-06-21 10:01:50,592] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096502_trimmed_fastqc.html
+[2021-06-21 10:01:50,632] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096509.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,636] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2095004_trimmed.fq.gz
+[2021-06-21 10:01:50,640] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096499.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,649] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2095004.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,658] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982660_trimmed_fastqc.html
+[2021-06-21 10:01:50,659] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982660_trimmed_fastqc.html
+[2021-06-21 10:01:50,695] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982702_trimmed.fq.gz
+[2021-06-21 10:01:50,695] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982610_trimmed.fq.gz
+[2021-06-21 10:01:50,701] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982609.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,713] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096498.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,719] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982700_trimmed.fq.gz
+[2021-06-21 10:01:50,725] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982801.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,736] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096485_trimmed_fastqc.html
+[2021-06-21 10:01:50,738] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096485_trimmed_fastqc.html
+[2021-06-21 10:01:50,774] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096482_trimmed.fq.gz
+[2021-06-21 10:01:50,794] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982618_trimmed_fastqc.html
+[2021-06-21 10:01:50,795] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982618_trimmed_fastqc.html
+[2021-06-21 10:01:50,833] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096507.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,837] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982796_trimmed.fq.gz
+[2021-06-21 10:01:50,859] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982699.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:50,868] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096500_trimmed_fastqc.html
+[2021-06-21 10:01:50,870] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096500_trimmed_fastqc.html
+[2021-06-21 10:01:50,911] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982665_trimmed_fastqc.html
+[2021-06-21 10:01:50,913] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982665_trimmed_fastqc.html
+[2021-06-21 10:01:50,952] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982797_trimmed_fastqc.html
+[2021-06-21 10:01:50,953] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982797_trimmed_fastqc.html
+[2021-06-21 10:01:50,992] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982656_trimmed_fastqc.html
+[2021-06-21 10:01:50,994] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982656_trimmed_fastqc.html
+[2021-06-21 10:01:51,027] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982613_trimmed.fq.gz
+[2021-06-21 10:01:51,032] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096487_trimmed_fastqc.html
+[2021-06-21 10:01:51,034] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096487_trimmed_fastqc.html
+[2021-06-21 10:01:51,097] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982615_trimmed_fastqc.html
+[2021-06-21 10:01:51,099] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982615_trimmed_fastqc.html
+[2021-06-21 10:01:51,136] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096490_trimmed.fq.gz
+[2021-06-21 10:01:51,141] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096507_trimmed_fastqc.html
+[2021-06-21 10:01:51,143] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096507_trimmed_fastqc.html
+[2021-06-21 10:01:51,186] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096505_trimmed_fastqc.html
+[2021-06-21 10:01:51,188] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096505_trimmed_fastqc.html
+[2021-06-21 10:01:51,234] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982613.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,243] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982699_trimmed_fastqc.html
+[2021-06-21 10:01:51,245] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982699_trimmed_fastqc.html
+[2021-06-21 10:01:51,278] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096510_trimmed.fq.gz
+[2021-06-21 10:01:51,278] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982664_trimmed.fq.gz
+[2021-06-21 10:01:51,281] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982661.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,283] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982661.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,292] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982804_trimmed_fastqc.html
+[2021-06-21 10:01:51,294] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982804_trimmed_fastqc.html
+[2021-06-21 10:01:51,326] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982701_trimmed.fq.gz
+[2021-06-21 10:01:51,326] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982622_trimmed.fq.gz
+[2021-06-21 10:01:51,330] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982616.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,339] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096498_trimmed_fastqc.html
+[2021-06-21 10:01:51,341] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096498_trimmed_fastqc.html
+[2021-06-21 10:01:51,381] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982609_trimmed_fastqc.html
+[2021-06-21 10:01:51,383] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982609_trimmed_fastqc.html
+[2021-06-21 10:01:51,425] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096486.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,434] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2095004_trimmed_fastqc.html
+[2021-06-21 10:01:51,435] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2095004_trimmed_fastqc.html
+[2021-06-21 10:01:51,474] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982663_trimmed.fq.gz
+[2021-06-21 10:01:51,479] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982701_trimmed_fastqc.html
+[2021-06-21 10:01:51,480] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982701_trimmed_fastqc.html
+[2021-06-21 10:01:51,515] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096483_trimmed.fq.gz
+[2021-06-21 10:01:51,515] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096501_trimmed.fq.gz
+[2021-06-21 10:01:51,520] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2095031_trimmed_fastqc.html
+[2021-06-21 10:01:51,522] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2095031_trimmed_fastqc.html
+[2021-06-21 10:01:51,557] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982608_trimmed.fq.gz
+[2021-06-21 10:01:51,562] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096486_trimmed_fastqc.html
+[2021-06-21 10:01:51,564] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096486_trimmed_fastqc.html
+[2021-06-21 10:01:51,604] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096490_trimmed_fastqc.html
+[2021-06-21 10:01:51,605] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096490_trimmed_fastqc.html
+[2021-06-21 10:01:51,645] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096487.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,650] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096507_trimmed.fq.gz
+[2021-06-21 10:01:51,650] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982615_trimmed.fq.gz
+[2021-06-21 10:01:51,654] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096488.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,658] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982657_trimmed.fq.gz
+[2021-06-21 10:01:51,658] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982801_trimmed.fq.gz
+[2021-06-21 10:01:51,664] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096508_trimmed_fastqc.html
+[2021-06-21 10:01:51,665] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096508_trimmed_fastqc.html
+[2021-06-21 10:01:51,704] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982612.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,709] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982659_trimmed.fq.gz
+[2021-06-21 10:01:51,709] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096509_trimmed.fq.gz
+[2021-06-21 10:01:51,714] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096484.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,726] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982622_trimmed_fastqc.html
+[2021-06-21 10:01:51,729] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982622_trimmed_fastqc.html
+[2021-06-21 10:01:51,775] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982616_trimmed_fastqc.html
+[2021-06-21 10:01:51,776] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982616_trimmed_fastqc.html
+[2021-06-21 10:01:51,834] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982665.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,835] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982665.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,844] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982805_trimmed_fastqc.html
+[2021-06-21 10:01:51,846] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982805_trimmed_fastqc.html
+[2021-06-21 10:01:51,889] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982801_trimmed_fastqc.html
+[2021-06-21 10:01:51,891] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982801_trimmed_fastqc.html
+[2021-06-21 10:01:51,927] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982800.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,929] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982800.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:51,933] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982614_trimmed.fq.gz
+[2021-06-21 10:01:51,938] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096483_trimmed_fastqc.html
+[2021-06-21 10:01:51,939] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096483_trimmed_fastqc.html
+[2021-06-21 10:01:51,977] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2095031_trimmed.fq.gz
+[2021-06-21 10:01:51,977] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096485_trimmed.fq.gz
+[2021-06-21 10:01:51,982] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982621_trimmed_fastqc.html
+[2021-06-21 10:01:51,983] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982621_trimmed_fastqc.html
+[2021-06-21 10:01:52,021] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982798_trimmed_fastqc.html
+[2021-06-21 10:01:52,023] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982798_trimmed_fastqc.html
+[2021-06-21 10:01:52,058] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982701.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,059] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982701.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,064] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982620_trimmed.fq.gz
+[2021-06-21 10:01:52,064] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982618_trimmed.fq.gz
+[2021-06-21 10:01:52,069] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982620_trimmed_fastqc.html
+[2021-06-21 10:01:52,070] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982620_trimmed_fastqc.html
+[2021-06-21 10:01:52,109] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096489_trimmed_fastqc.html
+[2021-06-21 10:01:52,111] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096489_trimmed_fastqc.html
+[2021-06-21 10:01:52,150] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096481.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,155] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096498_trimmed.fq.gz
+[2021-06-21 10:01:52,159] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096504.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,163] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982662_trimmed.fq.gz
+[2021-06-21 10:01:52,168] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982660.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,172] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096496_trimmed.fq.gz
+[2021-06-21 10:01:52,172] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982696_trimmed.fq.gz
+[2021-06-21 10:01:52,173] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982805_trimmed.fq.gz
+[2021-06-21 10:01:52,173] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096504_trimmed.fq.gz
+[2021-06-21 10:01:52,173] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982803_trimmed.fq.gz
+[2021-06-21 10:01:52,177] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982659.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,182] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096508_trimmed.fq.gz
+[2021-06-21 10:01:52,186] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982805.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,199] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982618.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,200] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982618.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,210] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982658_trimmed_fastqc.html
+[2021-06-21 10:01:52,211] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982658_trimmed_fastqc.html
+[2021-06-21 10:01:52,244] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096497_trimmed.fq.gz
+[2021-06-21 10:01:52,244] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982697_trimmed.fq.gz
+[2021-06-21 10:01:52,245] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982699_trimmed.fq.gz
+[2021-06-21 10:01:52,249] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096485.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,258] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982608_trimmed_fastqc.html
+[2021-06-21 10:01:52,259] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982608_trimmed_fastqc.html
+[2021-06-21 10:01:52,305] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982700_trimmed_fastqc.html
+[2021-06-21 10:01:52,306] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982700_trimmed_fastqc.html
+[2021-06-21 10:01:52,341] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096503_trimmed.fq.gz
+[2021-06-21 10:01:52,353] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982621.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,354] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982621.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,358] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982799_trimmed.fq.gz
+[2021-06-21 10:01:52,362] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096490.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,372] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982796_trimmed_fastqc.html
+[2021-06-21 10:01:52,373] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982796_trimmed_fastqc.html
+[2021-06-21 10:01:52,413] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982702_trimmed_fastqc.html
+[2021-06-21 10:01:52,414] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982702_trimmed_fastqc.html
+[2021-06-21 10:01:52,453] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982664_trimmed_fastqc.html
+[2021-06-21 10:01:52,454] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982664_trimmed_fastqc.html
+[2021-06-21 10:01:52,488] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982698_trimmed.fq.gz
+[2021-06-21 10:01:52,492] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096506.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,496] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982804_trimmed.fq.gz
+[2021-06-21 10:01:52,501] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096508.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,509] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2095014.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,514] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096488_trimmed.fq.gz
+[2021-06-21 10:01:52,514] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982616_trimmed.fq.gz
+[2021-06-21 10:01:52,518] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982622.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,522] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982621_trimmed.fq.gz
+[2021-06-21 10:01:52,526] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982615.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,534] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982620.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,535] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982620.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,543] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096500.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,547] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096506_trimmed.fq.gz
+[2021-06-21 10:01:52,552] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096481_trimmed_fastqc.html
+[2021-06-21 10:01:52,554] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096481_trimmed_fastqc.html
+[2021-06-21 10:01:52,590] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982658_trimmed.fq.gz
+[2021-06-21 10:01:52,595] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096509_trimmed_fastqc.html
+[2021-06-21 10:01:52,596] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096509_trimmed_fastqc.html
+[2021-06-21 10:01:52,637] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982611_trimmed_fastqc.html
+[2021-06-21 10:01:52,638] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982611_trimmed_fastqc.html
+[2021-06-21 10:01:52,683] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982657_trimmed_fastqc.html
+[2021-06-21 10:01:52,684] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982657_trimmed_fastqc.html
+[2021-06-21 10:01:52,721] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982697.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,743] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096484_trimmed_fastqc.html
+[2021-06-21 10:01:52,745] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096484_trimmed_fastqc.html
+[2021-06-21 10:01:52,795] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096499_trimmed_fastqc.html
+[2021-06-21 10:01:52,797] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096499_trimmed_fastqc.html
+[2021-06-21 10:01:52,837] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR2096506_trimmed_fastqc.html
+[2021-06-21 10:01:52,838] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096506_trimmed_fastqc.html
+[2021-06-21 10:01:52,890] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096496.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:52,932] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982662_trimmed_fastqc.html
+[2021-06-21 10:01:52,940] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982662_trimmed_fastqc.html
+[2021-06-21 10:01:53,098] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982612_trimmed.fq.gz
+[2021-06-21 10:01:53,118] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096497.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,141] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096489_trimmed.fq.gz
+[2021-06-21 10:01:53,144] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982656_trimmed.fq.gz
+[2021-06-21 10:01:53,159] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982702.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,165] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982702.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,189] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982661_trimmed.fq.gz
+[2021-06-21 10:01:53,208] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982662.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,251] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982612_trimmed_fastqc.html
+[2021-06-21 10:01:53,259] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982612_trimmed_fastqc.html
+[2021-06-21 10:01:53,474] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096502.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,515] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982797.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,538] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982798_trimmed.fq.gz
+[2021-06-21 10:01:53,557] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982799.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,600] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982798.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,635] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982696.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,641] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982696.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,664] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982660_trimmed.fq.gz
+[2021-06-21 10:01:53,679] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982804.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,685] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982804.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,727] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982614.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,779] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982613_trimmed_fastqc.html
+[2021-06-21 10:01:53,786] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982613_trimmed_fastqc.html
+[2021-06-21 10:01:53,931] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982698_trimmed_fastqc.html
+[2021-06-21 10:01:53,933] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982698_trimmed_fastqc.html
+[2021-06-21 10:01:53,970] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096503.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,979] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096505.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,986] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982700.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,987] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982700.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:53,995] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982698.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,000] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982665_trimmed.fq.gz
+[2021-06-21 10:01:54,003] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982796.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,004] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982796.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,010] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982619_trimmed.fq.gz
+[2021-06-21 10:01:54,014] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096482.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,023] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982657.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,028] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096487_trimmed.fq.gz
+[2021-06-21 10:01:54,028] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR1982623_trimmed.fq.gz
+[2021-06-21 10:01:54,033] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982614_trimmed_fastqc.html
+[2021-06-21 10:01:54,035] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982614_trimmed_fastqc.html
+[2021-06-21 10:01:54,080] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982658.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,089] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982802.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,099] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982663_trimmed_fastqc.html
+[2021-06-21 10:01:54,101] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982663_trimmed_fastqc.html
+[2021-06-21 10:01:54,148] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982610_trimmed_fastqc.html
+[2021-06-21 10:01:54,149] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982610_trimmed_fastqc.html
+[2021-06-21 10:01:54,195] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR2096489.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,209] multiqc                                            [DEBUG  ]  File ignored by hicexplorer because it exceeded search pattern filesize limit: SRR1982619.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,210] multiqc                                            [DEBUG  ]  File ignored by longranger/invocation because it exceeded search pattern filesize limit: SRR1982619.fastq.gz_trimming_report.txt
+[2021-06-21 10:01:54,215] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SRR2096499_trimmed.fq.gz
+[2021-06-21 10:01:54,438] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.3.4
+[2021-06-21 10:01:54,438] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.3.4
+[2021-06-21 10:01:54,439] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2021-06-21 10:01:54,442] multiqc                                            [DEBUG  ]  No samples found: ngsderive
+[2021-06-21 10:01:54,446] multiqc                                            [DEBUG  ]  No samples found: purple
+[2021-06-21 10:01:54,450] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2021-06-21 10:01:54,453] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2021-06-21 10:01:54,457] multiqc                                            [DEBUG  ]  No samples found: somalier
+[2021-06-21 10:01:54,461] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2021-06-21 10:01:54,465] multiqc                                            [DEBUG  ]  No samples found: mosdepth
+[2021-06-21 10:01:54,469] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2021-06-21 10:01:54,472] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2021-06-21 10:01:54,476] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2021-06-21 10:01:54,479] multiqc                                            [DEBUG  ]  No samples found: quast
+[2021-06-21 10:01:54,483] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2021-06-21 10:01:54,487] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2021-06-21 10:01:54,490] multiqc                                            [DEBUG  ]  No samples found: rockhopper
+[2021-06-21 10:01:54,494] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2021-06-21 10:01:54,498] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2021-06-21 10:01:54,502] multiqc                                            [DEBUG  ]  No samples found: busco
+[2021-06-21 10:01:54,505] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2021-06-21 10:01:54,509] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2021-06-21 10:01:54,512] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2021-06-21 10:01:54,517] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2021-06-21 10:01:54,521] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2021-06-21 10:01:54,524] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2021-06-21 10:01:54,528] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2021-06-21 10:01:54,532] multiqc                                            [DEBUG  ]  No samples found: happy
+[2021-06-21 10:01:54,535] multiqc                                            [DEBUG  ]  No samples found: mirtop
+[2021-06-21 10:01:54,539] multiqc                                            [DEBUG  ]  No samples found: homer
+[2021-06-21 10:01:54,542] multiqc                                            [DEBUG  ]  No samples found: hops
+[2021-06-21 10:01:54,546] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2021-06-21 10:01:54,549] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2021-06-21 10:01:54,553] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2021-06-21 10:01:54,557] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2021-06-21 10:01:54,561] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2021-06-21 10:01:54,565] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2021-06-21 10:01:54,568] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2021-06-21 10:01:54,573] multiqc                                            [DEBUG  ]  No samples found: fgbio
+[2021-06-21 10:01:54,579] multiqc                                            [DEBUG  ]  No samples found: dragen
+[2021-06-21 10:01:54,582] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2021-06-21 10:01:54,586] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2021-06-21 10:01:54,593] multiqc                                            [DEBUG  ]  No samples found: biobambam2
+[2021-06-21 10:01:54,596] multiqc                                            [DEBUG  ]  No samples found: jcvi
+[2021-06-21 10:01:54,600] multiqc                                            [DEBUG  ]  No samples found: mtnucratio
+[2021-06-21 10:01:54,603] multiqc                                            [DEBUG  ]  No samples found: picard
+[2021-06-21 10:01:54,607] multiqc                                            [DEBUG  ]  No samples found: sentieon
+[2021-06-21 10:01:54,611] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2021-06-21 10:01:54,614] multiqc                                            [DEBUG  ]  No samples found: qc3C
+[2021-06-21 10:01:54,618] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2021-06-21 10:01:54,622] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2021-06-21 10:01:54,626] multiqc                                            [DEBUG  ]  No samples found: sexdeterrmine
+[2021-06-21 10:01:54,629] multiqc                                            [DEBUG  ]  No samples found: eigenstratdatabasetools
+[2021-06-21 10:01:54,633] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2021-06-21 10:01:54,636] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2021-06-21 10:01:54,640] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2021-06-21 10:01:54,644] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2021-06-21 10:01:54,647] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2021-06-21 10:01:54,651] multiqc                                            [DEBUG  ]  No samples found: varscan2
+[2021-06-21 10:01:54,656] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2021-06-21 10:01:54,659] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2021-06-21 10:01:54,663] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2021-06-21 10:01:54,667] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2021-06-21 10:01:54,670] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2021-06-21 10:01:54,674] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2021-06-21 10:01:54,678] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2021-06-21 10:01:54,681] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2021-06-21 10:01:54,685] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2021-06-21 10:01:54,688] multiqc                                            [DEBUG  ]  No samples found: star
+[2021-06-21 10:01:54,692] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2021-06-21 10:01:54,695] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2021-06-21 10:01:54,699] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2021-06-21 10:01:54,703] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2021-06-21 10:01:54,706] multiqc                                            [DEBUG  ]  No samples found: snpsplit
+[2021-06-21 10:01:54,710] multiqc                                            [DEBUG  ]  No samples found: kat
+[2021-06-21 10:01:54,713] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2021-06-21 10:01:54,717] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2021-06-21 10:01:54,720] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2021-06-21 10:01:54,800] multiqc.modules.cutadapt.cutadapt                  [INFO   ]  Found 70 reports
+[2021-06-21 10:01:54,833] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2021-06-21 10:01:54,837] multiqc                                            [DEBUG  ]  No samples found: kaiju
+[2021-06-21 10:01:54,840] multiqc                                            [DEBUG  ]  No samples found: kraken
+[2021-06-21 10:01:54,844] multiqc                                            [DEBUG  ]  No samples found: malt
+[2021-06-21 10:01:54,847] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2021-06-21 10:01:54,850] multiqc                                            [DEBUG  ]  No samples found: sickle
+[2021-06-21 10:01:54,854] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2021-06-21 10:01:54,857] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2021-06-21 10:01:54,861] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2021-06-21 10:01:54,864] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2021-06-21 10:01:54,868] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2021-06-21 10:01:54,871] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2021-06-21 10:01:56,288] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 70 reports
+[2021-06-21 10:01:57,113] multiqc                                            [DEBUG  ]  No samples found: pychopper
+[2021-06-21 10:01:57,131] multiqc                                            [DEBUG  ]  No samples found: pycoqc
+[2021-06-21 10:01:57,275] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2021-06-21 10:01:57,293] multiqc                                            [DEBUG  ]  No samples found: multivcfanalyzer
+[2021-06-21 10:01:57,312] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2021-06-21 10:01:57,330] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2021-06-21 10:01:57,348] multiqc                                            [DEBUG  ]  No samples found: interop
+[2021-06-21 10:01:57,367] multiqc                                            [DEBUG  ]  No samples found: ivar
+[2021-06-21 10:01:57,386] multiqc                                            [DEBUG  ]  No samples found: flash
+[2021-06-21 10:01:57,403] multiqc                                            [DEBUG  ]  No samples found: seqyclean
+[2021-06-21 10:01:57,421] multiqc                                            [DEBUG  ]  No samples found: optitype
+[2021-06-21 10:01:57,829] multiqc                                            [INFO   ]  Compressing plot data
+[2021-06-21 10:02:00,439] multiqc                                            [INFO   ]  Report      : Results/Trim_galore/multiqc_report.html
+[2021-06-21 10:02:00,439] multiqc                                            [INFO   ]  Data        : Results/Trim_galore/multiqc_data
+[2021-06-21 10:02:00,439] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpe31ntlvt/multiqc_data' to 'Results/Trim_galore/multiqc_data'
+[2021-06-21 10:02:00,529] multiqc                                            [INFO   ]  MultiQC complete
