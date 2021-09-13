@@ -19,7 +19,8 @@ library(dendextend)
 
 ```{r import meta data, message=FALSE}
 #setwd("~/Desktop/Academics/HackBio Fellowship/Transcriptomics/NeuroGenomics-HackBio/02-PracticalDiffExp/scripts/")
-setwd("~/Desktop/Kakembo/Cancer_RNASeq_DataAnalysis/")
+#setwd("~/Desktop/Kakembo/Cancer_RNASeq_DataAnalysis/")
+setwd("~/Desktop/MSBT/Year2/Semester 1/Cancer Genetics and Genomics/Cancer_RNASeq_DataAnalysis/Cancer_RNASeq_DataAnalysis/")
 
 list.files() #List files in the directory
 
@@ -29,10 +30,7 @@ meta <- read.csv("metadata.file1", sep="\t", row.names = 1, header = T, stringsA
 
 levels(meta$cancer_type)
 
-table(meta$Run)
 head(meta)
-
-table(colnames(counts))
 ```
 
 
@@ -78,6 +76,12 @@ all(colnames(counts) == rownames(meta))
 #Subset the medata to just breast cancer and Health controls
 meta1 <- subset(meta,cancer_type=="Breast" | cancer_type=="HC" )
 
+write.csv(meta1, "Metadata_BR_HC.file", sep = "\t")
+meta1 <- read.csv("Metadata_BR_HC.file", row.names = 1, header = T, stringsAsFactors = T)
+
+levels(meta1$cancer_type)
+meta1$cancer_type <- relevel(meta1$cancer_type, ref = "HC")
+meta1$cancer_type
 #Subset the corresponing counts for the BC and HC
 counts1 <- counts[, rownames(meta1)]
 
@@ -117,11 +121,11 @@ scores <-as.data.frame(mat.pca$x)
 scores
 
 
-scores %>% 
-  mutate(GEO_Accession = rownames(scores)) %>% 
-  left_join(meta1) %>% 
-  ggplot(aes(PC1, PC2, color = cancer_type))+
-  geom_point()
+# scores %>% 
+#   mutate(GEO_Accession = rownames(scores)) %>% 
+#   left_join(meta1) %>% 
+#   ggplot(aes(PC1, PC2, color = cancer_type))+
+#   geom_point()
 
 ```
 ## R Markdown
@@ -137,8 +141,8 @@ vsd <- vst(dds1, blind=FALSE)  #computing for Variance Stabilizing Transformatio
 rld <- rlog(dds1, blind=FALSE) #Computing for regularised logarithm
 
 #BiocManager::install("vsn")
-BiocManager::install("pheatmap")
-BiocManager::install("calibrate")
+#BiocManager::install("pheatmap")
+#BiocManager::install("calibrate")
 library(vsn)
 library(pheatmap)
 library("RColorBrewer")
@@ -168,12 +172,60 @@ rownames(sampleDistMatrix) <- vsd$Condition
 colnames(sampleDistMatrix) <- rownames(meta1) 
 #Defining the colors
 colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
-pheatmap(sampleDistMatrix,
-clustering_distance_rows=sampleDists,
-clustering_distance_cols=sampleDists,
-col=colors)
+
+pheatmap(sampleDistMatrix, clustering_distance_rows=sampleDists,
+         clustering_distance_cols=sampleDists, col=colors)
+
+
 ```
 
+
+```{r}
+#plotPCA(vsd, intgroup="Condition")
+
+mycols <- brewer.pal(8, "Dark2")[1:length(unique(meta$Condition))]
+
+rld_pca <- function (rld, intgroup = "Condition", ntop = 500, colors=NULL, legendpos="bottomleft", main="PCA Biplot", textcx=1, ...) {
+
+require(RColorBrewer)
+rv = rowVars(assay(rld))
+select = order(rv, decreasing = TRUE)[seq_len(min(ntop, length(rv)))]
+pca = prcomp(t(assay(rld)[select, ]))
+fac = factor(apply(as.data.frame(colData(rld)[, intgroup, drop = FALSE]), 1, paste, collapse = " : "))
+if (is.null(colors)) {
+if (nlevels(fac) >= 3) {
+colors = brewer.pal(nlevels(fac), "Paired")
+} else {
+colors = c("black", "red")
+}
+}
+pc1var <- round(summary(pca)$importance[2,1]*100, digits=1)
+pc2var <- round(summary(pca)$importance[2,2]*100, digits=1)
+pc1lab <- paste0("PC1 (",as.character(pc1var),"%)")
+pc2lab <- paste0("PC1 (",as.character(pc2var),"%)")
+plot(PC2~PC1, data=as.data.frame(pca$x), bg=colors[fac], pch=21, xlab=pc1lab, ylab=pc2lab, main=main, ...)
+with(as.data.frame(pca$x), textxy(PC1, PC2, labs=rownames(as.data.frame(pca$x)), cex=textcx))
+legend(legendpos, legend=levels(fac), col=colors, pch=20)
+}
+rld_pca(rld, colors=mycols, intgroup="cancer_type", xlim=c(-75, 35))
+
+```
+
+```{r}
+#Dispersion plot
+plotDispEsts(dds1, main="Dispersion plot for DESeq")
+```
+
+```{r}
+#Obtain the coefficient to use for shrinkage
+resultsNames(dds1)
+
+
+#Computing for size shrikage using apeglm
+resLFC <- lfcShrink(dds, coef="cancer_type_Breast_vs_HC", type="apeglm")
+head(resLFC)
+
+```
 
 
 
